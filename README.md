@@ -107,8 +107,16 @@ const sum = (a, b) => a + b;
 
 That's TDD! Now we have our code working and matching the initial requirements.
 
-## TDD examples
+## TDD examples from the book
 
 The book is divided in three parts and contains two concrete examples. The first of them is an implementation of a system to handle multi-currency money. The second is an implementation of a testing tool similar to xUnit.
 
-My implementation of the first part is available [here](https://github.com/kaiosilveira/tdd-money-example). It was also added as a submodule of this project.
+### Part I: The Money example
+
+In this example we implement a system able to handle multi-currency operations. We have an expression as our starting point. The expression is:
+
+```
+$5 + 10CHF = $10 if rate is 2:1
+```
+
+All the implementation details are described [here](https://github.com/kaiosilveira/tdd-money-example). Pull requests were used to implement the code for each chapter, as the continuous integration pipeline would be broken from time to time (whenever we add a new test going through the first step of the cycle, to be specific).
