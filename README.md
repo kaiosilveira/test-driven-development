@@ -1,8 +1,8 @@
 # Test-Driven Development
 
-A few terms in software engineering is so overloaded and misunderstood as "tdd". These three characters can have completely different meanings depending on who you ask, the person's professional and academic background and their beliefs. I've come across a lot of these different meanings myself and, to be honest, it took me more time than it should have taken to buy and read the actual book to create my understanding of what Kent Beck meant with this practice.
+Few terms in software engineering are so overloaded and misunderstood as "tdd". These three characters can have completely different meanings depending on who you ask, the person's professional and academic background and their beliefs. I've come across a lot of these different meanings myself and, to be honest, it took me more time than it should have taken to buy and read the actual book to create my understanding of what Kent Beck meant with this practice.
 
-Nowadays I'm constantly asked about TDD's tradeoffs and the value it adds to the software engineering practice. That's why I've decided to read the book for the third time, and this time, I decided to document the examples presented in the book, write all the code and the tests, and also share my feelings, understandings and views of it.
+Nowadays I'm constantly asked about TDD's tradeoffs and the value it adds to the software engineering practice. That's why I've decided to read the book for the third time and to document the examples presented in there, writing all the code and the tests. So I can share my feelings, understandings and views of it.
 
 ## Why TDD?
 
