@@ -1,8 +1,12 @@
 # Test-Driven Development
 
-General introduction to the topic and reflections on my own career
+A few terms in software engineering is so overloaded and misunderstood as "tdd". These three characters can have completely different meanings depending who you ask, the person's professional and academic background and their beliefs. I've come across a lot of these different meaning myself and, to be honest, it took more time than it should have taken to buy and read the actual book to create my own understand of what Kent Beck meant with this practice.
+
+Nowadays I'm still constantly asked about TDD's tradeoffs and about the value it adds to the software engineering practice, especially when I'm being interviewed. That's why I'm reading the book for the third time, and this time around I decided to document the examples of the book with working code, and also share my own feelings, understand and view of it.
 
 ## Why TDD?
+
+I've asked this question to myself many times before reading the book and, even after I've done so, it still took me some time to effectively start seeing the value of it in practice in a day-to-day basis. I decided to give it a formal goal when working at Yellowcam a good time ago. Back then, it was a greenfield project and I was hired to kick off the engineering part of things. It was a fast-paced environment with requirements changing in a daily basis, which made the perfect situation to start defining these requirements as tests and to let them guide the code. After six months and two thousand unit tests later, we had an MVP running in production. The API presented only a few defects, more related to domain rules not being applied correctly than to the code itself, which was, to me, the definitive demonstration of value in applying TDD. Since then I'm a regular practitioner.
 
 ## The TDD cycle
 
@@ -22,7 +26,7 @@ To exercise the cycle described above, the simplest example I can think of is a 
 
 **Write a test**
 
-the test for this function would be
+the test for this function would be something like this:
 
 ```javascript
 describe('sum', () => {
