@@ -1,12 +1,12 @@
 # Test-Driven Development
 
-A few terms in software engineering is so overloaded and misunderstood as "tdd". These three characters can have completely different meanings depending who you ask, the person's professional and academic background and their beliefs. I've come across a lot of these different meaning myself and, to be honest, it took more time than it should have taken to buy and read the actual book to create my own understand of what Kent Beck meant with this practice.
+A few terms in software engineering is so overloaded and misunderstood as "tdd". These three characters can have completely different meanings depending on who you ask, the person's professional and academic background and their beliefs. I've come across a lot of these different meanings myself and, to be honest, it took me more time than it should have taken to buy and read the actual book to create my understanding of what Kent Beck meant with this practice.
 
-Nowadays I'm still constantly asked about TDD's tradeoffs and about the value it adds to the software engineering practice, especially when I'm being interviewed. That's why I'm reading the book for the third time, and this time around I decided to document the examples of the book with working code, and also share my own feelings, understand and view of it.
+Nowadays I'm constantly asked about TDD's tradeoffs and the value it adds to the software engineering practice. That's why I've decided to read the book for the third time, and this time, I decided to document the examples presented in the book, write all the code and the tests, and also share my feelings, understandings and views of it.
 
 ## Why TDD?
 
-I've asked this question to myself many times before reading the book and, even after I've done so, it still took me some time to effectively start seeing the value of it in practice in a day-to-day basis. I decided to give it a formal goal when working at Yellowcam a good time ago. Back then, it was a greenfield project and I was hired to kick off the engineering part of things. It was a fast-paced environment with requirements changing in a daily basis, which made the perfect situation to start defining these requirements as tests and to let them guide the code. After six months and two thousand unit tests later, we had an MVP running in production. The API presented only a few defects, more related to domain rules not being applied correctly than to the code itself, which was, to me, the definitive demonstration of value in applying TDD. Since then I'm a regular practitioner.
+I've asked myself this question many times before reading the book and, even after I've done so, it still took me some time to effectively start seeing the value of it in practice on a day-to-day basis. I decided to give it a formal goal when working at Yellowcam a good time ago. Back then, it was a greenfield project that I was hired to kick off the engineering part of things. It was a fast-paced environment with requirements changing daily, which made the perfect situation to start defining these requirements as tests and to let them guide the code. After six months and two thousand unit tests later, we had an MVP running in production. The API presented only a few defects, more related to domain rules not being applied correctly than to the code itself, which was, to me, the definitive demonstration of value in applying TDD. Since then I'm a regular practitioner.
 
 ## The TDD cycle
 
@@ -18,7 +18,7 @@ The TDD cycle goes as follows:
 4. Run all tests and see them all succeed
 5. Refactor to remove duplication
 
-This is also known as "red -> green -> refactor". Whenever new code need to be added to the codebase, you write a test with some assumptions about it and the best (and cleanest) API you can think of to make it work. Then, you'll get a red bar because the functionality is not there yet. The main goal in this point is to bring the bar back to green, which we can accomplish by committing all the imaginable sins (more about it in the example below) in terms of code. After the bar is green, though, we need to start refactoring to make the code work properly.
+This is also known as "red -> green -> refactor". Whenever you need to add new code to the codebase, you write a test with some assumptions about it and the best (and cleanest) API you can think of to make it work. Then, you'll get a red bar because the functionality is not there yet. The main goal at this point is to bring the bar back to green, which we can accomplish by committing all the imaginable sins (more about it in the example below) in terms of code. After the bar is green, though, we need to start refactoring to make the code work properly.
 
 ### The simplest example
 
@@ -106,3 +106,9 @@ const sum = (a, b) => a + b;
 ```
 
 That's TDD! Now we have our code working and matching the initial requirements.
+
+## TDD examples
+
+The book is divided in three parts and contains two concrete examples. The first of them is an implementation of a system to handle multi-currency money. The second is an implementation of a testing tool similar to xUnit.
+
+My implementation of the first part is available [here](https://github.com/kaiosilveira/tdd-money-example). It was also added as a submodule of this project.
