@@ -1,0 +1,3 @@
+[submodule "tdd-money-example"]
+	path = tdd-money-example
+	url = https://github.com/kaiosilveira/tdd-money-example.git
