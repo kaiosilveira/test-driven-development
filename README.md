@@ -119,4 +119,25 @@ In this example we implement a system able to handle multi-currency operations. 
 $5 + 10CHF = $10 if rate is 2:1
 ```
 
-All the implementation details are described [here](https://github.com/kaiosilveira/tdd-money-example). Pull requests were used to implement the code for each chapter, as the continuous integration pipeline would be broken from time to time (whenever we add a new test going through the first step of the cycle, to be specific).
+Pull requests were used to implement the code for each chapter, as the continuous integration pipeline would be broken from time to time (whenever we add a new test going through the first step of the cycle, to be specific). The table maps each chapter in the book to a specific PR.
+
+| Chapter                     | Pull request                                                                                                                            |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| #1: Multi-currency money    | [Add initial Dollar class with the capability of being multiplied by scalars](https://github.com/kaiosilveira/tdd-money-example/pull/1) |
+| #2: Degenerate objects      | [Fix dollar side effects](https://github.com/kaiosilveira/tdd-money-example/pull/2)                                                     |
+| #3: Equality for all        | [Add equality logic for Dollar](https://github.com/kaiosilveira/tdd-money-example/pull/3)                                               |
+| #4: Privacy                 | [Make dollar.amount private](https://github.com/kaiosilveira/tdd-money-example/pull/4)                                                  |
+| #5: Franc-ly speaking       | [Introduce Franc (CHF) class](https://github.com/kaiosilveira/tdd-money-example/pull/5)                                                 |
+| #6: Equality for All, Redux | [Remove duplication between Dollar and Franc](https://github.com/kaiosilveira/tdd-money-example/pull/6)                                 |
+| #7: Apples and Oranges      | [Fix Franc-Dollar comparison](https://github.com/kaiosilveira/tdd-money-example/pull/7)                                                 |
+| #8: Makin' Objects          | [Introduce factory methods Money.franc and Money.dollar](https://github.com/kaiosilveira/tdd-money-example/pull/8)                      |
+| #9: Times We're Living in   | [Introduce the concept of currency](https://github.com/kaiosilveira/tdd-money-example/pull/9)                                           |
+| #10: Interesting Times      | [Pull up times method to Money](https://github.com/kaiosilveira/tdd-money-example/pull/10)                                              |
+| #11: The Root of All Evil   | [Delete Franc and Dollar subclasses](https://github.com/kaiosilveira/tdd-money-example/pull/11)                                         |
+| #12: Addition, Finally      | [Implement money addition](https://github.com/kaiosilveira/tdd-money-example/pull/12)                                                   |
+| #13: Make It                | [Implement real reduce operation for bank ](https://github.com/kaiosilveira/tdd-money-example/pull/13)                                  |
+| #14: Change                 | [Reduce mixed currency money](https://github.com/kaiosilveira/tdd-money-example/pull/14)                                                |
+| #15: Mixed currencies       | [Add support to sum mixed currencies](https://github.com/kaiosilveira/tdd-money-example/pull/15)                                        |
+| #16: Abstraction, Finally   | [Add .plus and .times to Expression interface](https://github.com/kaiosilveira/tdd-money-example/pull/16)                               |
+
+Make sure to check out all the implementation details [here](https://github.com/kaiosilveira/tdd-money-example) for further clarifications on the approach used to build these PR's and how to navigate the changes.
