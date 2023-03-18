@@ -119,7 +119,7 @@ In this example we implement a system able to handle multi-currency operations. 
 $5 + 10CHF = $10 if rate is 2:1
 ```
 
-Pull requests were used to implement the code for each chapter, as the continuous integration pipeline would be broken from time to time (whenever we add a new test going through the first step of the cycle, to be specific). The table maps each chapter in the book to a specific PR.
+Pull requests were used to implement the code for each chapter, as the continuous integration pipeline would be broken from time to time (whenever we add a new test going through the first step of the cycle, to be specific). The table below maps each chapter in the book to a specific PR.
 
 | Chapter                     | Pull request                                                                                                                            |
 | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
