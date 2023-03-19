@@ -170,3 +170,9 @@ Pull requests were also used in this example to make the code tell a history of 
 | [Bonus](https://github.com/kaiosilveira/tdd-xunit-example/issues/14): Create `TestSuite` from `TestCase`     | [Create TestSuite from TestCase](https://github.com/kaiosilveira/tdd-xunit-example/pull/22)       |
 
 Make sure to visit [this example's repository](https://github.com/kaiosilveira/tdd-xunit-example) to have a full view of what was implemented.
+
+## Conclusion & final thoughts
+
+Unfortunately, writing tests is still taboo in many engineering teams and tech organizations, with the idea of writing the tests before even implementing code seeming too utopic and farfetched. This happens for many reasons, but more often because of pressure from the business (which is often focusing on the wrong, vanity metrics) or a plain lack of skill and interest from the engineers. On the other hand, measuring the impact and benefits of TDD is hard, especially in the short term, as it is an enabler practice that allows for more deep and mid to long-term benefits. There are some studies, though, that correlate healthy testing practices with elite engineering performance, such as the multi-year "State of DevOps Reports", published by Puppet Labs and then by DORA and thoroughly reviewed in the book "Accelerate" (Nicole Forsgren, Gene Kim, Jez Humble).
+
+In my personal experience, the fact of having tests in case, especially at the unit level, is crucial to building and maintaining a healthy, multiple-decade-lasting codebase and preventing it from crashing over its weight, as it allows for **refactoring** (see [kaiosilveira/refactoring](https://github.com/kaiosilveira/refactoring)), a most-needed practice in any organization that wants to keep things in a good, clean state.
