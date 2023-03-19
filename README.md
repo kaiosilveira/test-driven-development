@@ -141,3 +141,29 @@ Pull requests were used to implement the code for each chapter, as the continuou
 | #16: Abstraction, Finally   | [Add .plus and .times to Expression interface](https://github.com/kaiosilveira/tdd-money-example/pull/16)                               |
 
 Make sure to check out all the implementation details [here](https://github.com/kaiosilveira/tdd-money-example) for further clarification on the approach used to build these PRs and how to navigate the changes.
+
+## Part II: The xUnit Example
+
+In this example, we want to build a testing framework that constantly tests itself throughout the process. We start with a list of things that we want it to do and that will guide us through the implementation:
+
+```
+- Invoke test method
+- Invoke setUp first
+- Invoke tearDown afterward
+- Invoke tearDown even if the test method fails
+- Run multiple tests
+- Report collected results
+```
+
+Pull requests were also used in this example to make the code tell a history of the changes. The table below contains a match of all chapters and their related pull requests.
+
+| Chapter                   | Pull request                                                                                |
+| ------------------------- | ------------------------------------------------------------------------------------------- |
+| #18: First steps to xUnit | [Bootstrap the testing framework](https://github.com/kaiosilveira/tdd-xunit-example/pull/1) |
+| #19: Set the table        | [Configure a setUp() method](https://github.com/kaiosilveira/tdd-xunit-example/pull/2)      |
+| #20: Cleaning up after    | [Implement tearDown()](https://github.com/kaiosilveira/tdd-xunit-example/pull/8)            |
+| #21: Counting             | [Report collected results](https://github.com/kaiosilveira/tdd-xunit-example/pull/9)        |
+| #22: Dealing with failure | [Report failed tests](https://github.com/kaiosilveira/tdd-xunit-example/pull/10)            |
+| #23: How suite it is      | [Implement TestSuite](https://github.com/kaiosilveira/tdd-xunit-example/pull/12)            |
+
+Make sure to visit [this example's repository](https://github.com/kaiosilveira/tdd-xunit-example) to have a full view of what was implemented.
