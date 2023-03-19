@@ -1,8 +1,8 @@
 # Test-Driven Development
 
-Few terms in software engineering are so overloaded and misunderstood as "tdd". These three characters can have completely different meanings depending on who you ask, the person's professional and academic background and their beliefs. I've come across a lot of these different meanings myself and, to be honest, it took me more time than it should have taken to buy and read the actual book to create my understanding of what Kent Beck meant with this practice.
+A few terms in software engineering are so overloaded and misunderstood as "TDD". These three characters can have completely different meanings depending on who you ask, the person's professional and academic background and their beliefs. I've come across a lot of these different meanings myself and, to be honest, it took me more time than it should have taken to buy and read the actual book to create my understanding of what Kent Beck meant with this practice.
 
-Nowadays I'm constantly asked about TDD's tradeoffs and the value it adds to the software engineering practice. That's why I've decided to read the book for the third time and to document the examples presented in there, writing all the code and the tests. So I can share my feelings, understandings and views of it.
+Nowadays I'm constantly asked about TDD's tradeoffs and the value it adds to the software engineering practice. That's why I've decided to read the book for the third time and to document the examples presented there, writing all the code and the tests. So I can share my feelings, understandings and views of it.
 
 ## Why TDD?
 
@@ -38,7 +38,7 @@ describe('sum', () => {
 
 **Run all tests and see the new one failing**
 
-This test would of course fail because `sum` doesn't exist yet. That's the red part. When we tell ourselves a story of how the code should look like when we're finished.
+This test would of course fail because `sum` doesn't exist yet. That's the red part. When we tell ourselves a story of how the code should look when we're finished.
 
 ```
 ➜ yarn test
@@ -79,7 +79,7 @@ const sum = (a, b) => 2;
 
 **Run all tests and see them all succeed**
 
-The test now pass (for a limited range of inputs, of course). But it's enough to take us to the green bar. The green bar in TDD means safety, and safety means we can change the code without worrying about breaking anything or causing unintended and hard-to-debug side effects.
+The test now passes (for a limited range of inputs, of course). But it's enough to take us to the green bar. The green bar in TDD means safety, and safety means we can change the code without worrying about breaking anything or causing unintended and hard-to-debug side effects.
 
 ```
 ➜ yarn test
@@ -99,7 +99,7 @@ Ran all test suites.
 
 **Refactor to remove duplication**
 
-Removing duplication is the last step to make our code work. What's duplication in this case, though? The duplication is in the data between the test and the code, the number `2` in our case. For this example it's easy to generalize the solution:
+Removing duplication is the last step to making our code work. What's duplication in this case, though? The duplication is in the data between the test and the code, the number `2` in our case. For this example it's easy to generalize the solution:
 
 ```javascript
 const sum = (a, b) => a + b;
@@ -109,11 +109,11 @@ That's TDD! Now we have our code working and matching the initial requirements.
 
 ## TDD examples from the book
 
-The book is divided in three parts and contains two concrete examples. The first of them is an implementation of a system to handle multi-currency money. The second is an implementation of a testing tool similar to xUnit.
+The book is divided into three parts and contains two concrete examples. The first of them is an implementation of a system to handle multi-currency money. The second is an implementation of a testing tool similar to xUnit.
 
-### Part I: The Money example
+### Part I: The Money Example
 
-In this example we implement a system able to handle multi-currency operations. We have an expression as our starting point. The expression is:
+In this example, we implement a system able to handle multi-currency operations. We have an expression as our starting point. The expression is:
 
 ```
 $5 + 10CHF = $10 if rate is 2:1
@@ -140,4 +140,4 @@ Pull requests were used to implement the code for each chapter, as the continuou
 | #15: Mixed currencies       | [Add support to sum mixed currencies](https://github.com/kaiosilveira/tdd-money-example/pull/15)                                        |
 | #16: Abstraction, Finally   | [Add .plus and .times to Expression interface](https://github.com/kaiosilveira/tdd-money-example/pull/16)                               |
 
-Make sure to check out all the implementation details [here](https://github.com/kaiosilveira/tdd-money-example) for further clarifications on the approach used to build these PR's and how to navigate the changes.
+Make sure to check out all the implementation details [here](https://github.com/kaiosilveira/tdd-money-example) for further clarification on the approach used to build these PRs and how to navigate the changes.
